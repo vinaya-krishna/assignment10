@@ -11,13 +11,11 @@
 
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 	<script src="//cdn.jsdelivr.net/npm/stickyNavbar.js@1.3.3/jquery.stickyNavbar.min.js"></script>
-
-
+	
 	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="js/jquery.mobilemenu.js"></script>
 
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-	<script src="js/jquery.sticky.js"></script>
 	<script src="js/jquery.goTop.js"></script>
 
 	<script>
@@ -49,23 +47,7 @@
 			cursor: pointer;
 		}
 
-		nav:last-child ul {
-			margin-top: 0px;
-			margin-left: 15px;
-		}
-		nav:last-child ul li {
-			display: list-item;
-			width: 100%;
-			height: 100%;
-			text-align: left;
-		}
-		nav:last-child ul li a {
-			padding-left: 0px;
-			padding-right: 0px;
-		}
-		#vProspect, #vConvert, #vRetain {
-			text-align: justify;
-		}
+		
 	</style>
 </head>
 <body>
@@ -147,16 +129,23 @@
 			<p>&nbsp;</p>
 		</section>
 		
-		<section id="solutions_nav" class="five columns">
+		<section class="five columns">
 			<h4>Quick Nav</h4>
+			<div class="solutions_nav">
+				<a href="#vProspect"> vProspect 2.0 </a>
+			</div>
+			<div class="solutions_nav">
+					<a href="#vConvert"> vConvert 2.0 </a>
+			</div>
+			<div class="solutions_nav">
+					<a href="#vRetain"> vRetain 1.0 </a>
+			</div>
 
-			<!-- INSERT ACCORDION HERE -->
-			<ul>
-				<li><a href="#vProspect"> vProspect 2.0 </a></li>
-				<li><a href="#vConvert"> vConvert 2.0 </a></li>
-				<li><a href="#vRetain"> vRetain 1.0 </a></li>
-			</ul>
 		</section>
 	</main>
+	<script src="https://cdn.jsdelivr.net/npm/sticksy@latest/dist/sticksy.min.js"></script>
+	<script>
+	$('.solutions_nav').sticksy();
+	</script>
 </body>
 </html>
